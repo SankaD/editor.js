@@ -96,8 +96,11 @@ export default class Toolbox extends Module<ToolboxNodes> {
    * Destroy Module
    */
   public destroy(): void {
-    this.flipper.deactivate();
-    this.flipper = null;
+    // if (this.flipper) {
+    //   this.flipper.deactivate();
+    //   this.flipper = null;
+    // }
+
     this.removeAllNodes();
     this.removeAllShortcuts();
   }
