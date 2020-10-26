@@ -101,8 +101,8 @@ export default class Toolbox extends Module<ToolboxNodes> {
     //   this.flipper = null;
     // }
 
-    this.removeAllNodes();
-    this.removeAllShortcuts();
+    // this.removeAllNodes();
+    // this.removeAllShortcuts();
   }
 
   /**
@@ -111,7 +111,7 @@ export default class Toolbox extends Module<ToolboxNodes> {
    * @param {MouseEvent|KeyboardEvent} event - event that activates toolbox button
    * @param {string} toolName - button to activate
    */
-  public toolButtonActivate(event: MouseEvent|KeyboardEvent, toolName: string): void {
+  public toolButtonActivate(event: MouseEvent | KeyboardEvent, toolName: string): void {
     const tool = this.Editor.Tools.toolsClasses[toolName] as BlockToolConstructable;
 
     this.insertNewBlock(tool, toolName);

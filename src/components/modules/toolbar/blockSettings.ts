@@ -112,7 +112,7 @@ export default class BlockSettings extends Module<BlockSettingsNodes> {
     //   this.flipper = null;
     // }
 
-    this.removeAllNodes();
+    // this.removeAllNodes();
   }
 
   /**

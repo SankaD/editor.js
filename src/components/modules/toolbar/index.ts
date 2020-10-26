@@ -381,8 +381,8 @@ export default class Toolbar extends Module<ToolbarNodes> {
    * It is used in Read-Only mode
    */
   private destroy(): void {
-    this.Editor.Toolbox.destroy();
-    this.Editor.BlockSettings.destroy();
-    this.removeAllNodes();
+    // this.Editor.Toolbox.destroy();
+    // this.Editor.BlockSettings.destroy();
+    // this.removeAllNodes();
   }
 }

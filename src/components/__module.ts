@@ -107,13 +107,13 @@ export default class Module<T extends ModuleNodes = {}> {
    * Remove memorized nodes
    */
   public removeAllNodes(): void {
-    for (const key in this.nodes) {
-      const node = this.nodes[key];
+    // for (const key in this.nodes) {
+    //   const node = this.nodes[key];
 
-      if (node instanceof HTMLElement) {
-        node.remove();
-      }
-    }
+    //   if (node instanceof HTMLElement) {
+    //     node.remove();
+    //   }
+    // }
   }
 
   /**
